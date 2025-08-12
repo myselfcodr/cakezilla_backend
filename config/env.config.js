@@ -1,0 +1,41 @@
+import dotenv from "dotenv";
+dotenv.config();
+
+const {
+  PORT,
+  DB_URL,
+  JWT_EXPIRY,
+  EMAIL_VERIFY_TOKEN_SECRET_KEY,
+  MAIL_HOST,
+  MAIL_PORT,
+  MAIL_USER,
+  MAIL_PASS,
+  MAIL_EMAIL,
+  DOMAIN_URL,
+  CLOUDINARY_CLOUD_NAME,
+  CLOUDINARY_API_KEY,
+  CLOUDINARY_API_SECTET,
+  RAZORPAY_KEY_ID,
+  RAZORPAY_KEY_SECRET,
+} = process.env;
+
+const envConfig = {
+  PORT: PORT || 5000,
+  DB_URL: DB_URL || "mongodb://localhost:27017/cakeorderdb",
+  JWT_EXPIRY,
+  EMAIL_VERIFY_TOKEN_SECRET_KEY,
+  // Mail creadential
+  MAIL_HOST,
+  MAIL_PORT,
+  MAIL_USER,
+  MAIL_PASS,
+  MAIL_EMAIL,
+  DOMAIN_URL,
+  CLOUDINARY_CLOUD_NAME,
+  CLOUDINARY_API_KEY,
+  CLOUDINARY_API_SECTET,
+  RAZORPAY_KEY_ID,
+  RAZORPAY_KEY_SECRET,
+};
+
+export default envConfig;

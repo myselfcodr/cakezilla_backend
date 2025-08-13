@@ -3,7 +3,7 @@ dotenv.config();
 
 const {
   PORT,
-  DB_URL,
+  DB_URI,
   JWT_EXPIRY,
   EMAIL_VERIFY_TOKEN_SECRET_KEY,
   MAIL_HOST,
@@ -20,8 +20,8 @@ const {
 } = process.env;
 
 const envConfig = {
-  PORT: PORT || 5000,
-  DB_URL: DB_URL || "mongodb://localhost:27017/cakeorderdb",
+  PORT,
+  DB_URI: DB_URI || "mongodb+srv://myselfcodr:8878822433@cakezilla.tsiebfi.mongodb.net/?retryWrites=true&w=majority&appName=CAKEZILLA",
   JWT_EXPIRY,
   EMAIL_VERIFY_TOKEN_SECRET_KEY,
   // Mail creadential
